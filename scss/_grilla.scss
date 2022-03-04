@@ -1,0 +1,72 @@
+.contenedor {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    
+    grid-template-areas: "header           header           header"
+   "main             main             lateral"
+   "widget-1         widget-2         lateral"
+   "footer           footer           footer"; 
+}
+  
+  
+  .contenedor div,
+  .contenedor .header,
+  .contenedor .main,
+  .contenedor .sidebar,
+  .contenedor .footer {
+    border-radius: 5px; 
+}
+  
+  
+  .contenedor .header {
+    grid-area: header;
+    background-color: rgb(65, 161, 97); 
+}
+  
+  .contenedor .main {
+    grid-area: main;
+    min-height: 800px;
+    background-color: rgb(12, 40, 165); 
+}
+  
+  .contenedor .lateral {
+    grid-area: lateral;
+    background-color: rgb(82, 102, 167);
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+  
+  .contenedor .widget-1,
+  .contenedor .widget-2 {
+    min-height: 300px;
+    background-color: blue;
+  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+  
+  .contenedor .widget-1 {
+    grid-area: widget-1; 
+}
+  
+  .contenedor .widget-2 {
+    grid-area: widget-2; 
+}
+  
+  .contenedor .footer {
+    background-color: rgb(146, 68, 123);
+    grid-area: footer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+  

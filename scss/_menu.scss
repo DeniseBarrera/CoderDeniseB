@@ -1,0 +1,50 @@
+#btn-menu {
+    display: none; 
+}
+  
+  header {
+    width: 100%;
+    background-color: rgb(71, 110, 68); 
+}
+
+    header label {
+      display: none;
+      width: 40px;
+      height: 40px;
+      padding: 1px;
+      border-right: 0px solid #fff; 
+    }
+      header label:hover {
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.4); 
+    }
+  
+.menu {
+
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    li {
+        color: rgb(71, 110, 68);
+        font-size: 40px;
+        text-align: center;
+        flex-grow: 1;
+        border-right: 1px solid black;
+        a {
+            display: block;
+            font-size: 19px;
+            color: black;
+            padding: 15px 20px;
+            text-decoration: none;
+            background-color: rgb(71, 110, 68);
+            border: 0px; 
+        } 
+        button {
+            border: 0px; 
+        }
+    }
+}
+}

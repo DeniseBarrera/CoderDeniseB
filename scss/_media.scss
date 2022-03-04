@@ -1,0 +1,43 @@
+@media screen and (max-width: 1000px) {
+    .contenedor {
+      grid-template-areas: "header         header         header"
+   "main           main           main"
+   "lateral        lateral        lateral"
+   "widget-1       widget-1       widget-2"
+   "footer         footer         footer"; } }
+  
+  @media screen and (max-width: 640px) {
+    .contenedor {
+      grid-template-areas: "header         header         header"
+   "main           main           main"
+   "lateral        lateral        lateral"
+   "widget-1       widget-1       widget-1"
+   "widget-2       widget-2       widget-2"
+   "footer         footer         footer"; 
+} 
+}
+  
+  
+  @media (max-width: 800px) {
+    header label {
+      display: block; 
+    }
+    .menu {
+      position: absolute;
+      background: red;
+      width: 70%;
+      margin-left: -70%;
+      transition: all 0.8s;
+      z-index: 500; 
+    }
+    .menu ul {
+      flex-direction: column; 
+    }
+    .menu li {
+      border-top: 1px solid red; 
+    }
+    #btn-menu:checked ~ .menu {
+      margin: 10px 0px 0px 0px; 
+    } 
+}
+  
